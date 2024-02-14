@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+header{
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: brown;
+    justify-content: space-between;
+    align-items: center;
+}
+.top{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 30px 0;
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+.top:hover{
+    opacity: 1;
+}
+.cod-menu{
+    position: relative;
+    line-height: 1.8em;
+}
+.cod-menu .cod-sub{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.cod-items > a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+    padding: 30px 0;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+.cod-items > a:hover{
+    opacity: 1;
+    color: cornflowerblue;
+}
+.cod-items .tin-menu{
+    position: absolute;
+    list-style: none;
+    line-height: 1.8em;
+    background-color: brown;
+    pointer-events: none;
+    top: 20px;
+    border-radius: 0 0 5px 5px;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+.cod-items .tin-menu .tin-items{
+    position: relative;
+    padding: 8px 0;
+}
+.tin-items a{
+    text-decoration: none;
+    color: white;
+    padding: 7px 30px;
+}
+.cod-items:hover .tin-menu{
+    pointer-events: all;
+    transform: translateY(0);
+    opacity: 1;
+}
+.tin-items a:hover{
+    background-color: cornflowerblue;
+}
+.main{
+    text-align: center;
+    padding: 15%;
+    background-image: url(parrot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.main > h1{
+    color: #fff;
+    font-weight: 900;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0.5;
+
+}
+.main > h1:hover{
+    opacity: 1;
+}
+
+footer{
+    clear: both;
+    background-color: brown;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+}
+aside{
+    width: 20%;
+    float: left;
+    padding: 10px;
+    line-height: 1.2;
+    cursor: pointer;
+}
+section{
+    width: 50%;
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+    line-height: 1.2;
+}
+article{
+    width: 30%;
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+    line-height: 1.2;
+}
+footer p{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 10px;
+}
+footer > h2{
+    color: white;
+    font-size: 20px;
+    margin-left: 50%;
+    font-weight: 700;
+}
+aside > h2{
+    border: 2px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section > h2{
+    border: 2px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+article > h2{
+    border: 2px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+article > h2:hover{
+    color: white;
+    background-color: #000;
+}
+aside > h2:hover{
+    color: #fff;
+    background-color: #000;
+}
+section > h2:hover{
+    color: #fff;
+    background-color: #000;
+}
+p{
+    text-transform: capitalize;
+}
